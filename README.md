@@ -1,151 +1,54 @@
-# Mer Andreas S. Jorgio - Portfolio
+# About Mer Andreas S. Jorgio
 
-A minimal, professional portfolio website with an orange theme built with HTML, CSS, and JavaScript. Designed for easy customization and GitHub Pages deployment.
+Welcome to my portfolio! I'm a Computer Science student at Colegio de Jesus (CJC) with a passion for analytical problem-solving and creative game development.
 
-## Features
+🔗 **[Explore my full portfolio](https://merandreas.github.io/MyPortfolio/)**
 
-- **Responsive Design**: Works seamlessly on desktop, tablet, and mobile devices
-- **Orange Theme**: Modern, professional styling with easy customization
-- **Easy to Edit**: Simple HTML structure for quick content updates
-- **GitHub Pages Ready**: Deploy directly from your repository
-- **Smooth Animations**: Subtle scroll animations and transitions
-- **Fast Loading**: Optimized performance with minimal dependencies
+## Who I Am
 
-## Quick Start
+I'm a driven developer and computer science enthusiast with a strong analytical mindset and a deep passion for gaming. I thrive on solving complex problems and building meaningful projects that bridge technology and user experience. My journey spans multiple disciplines—from backend systems to augmented reality, machine learning, and game development.
 
-### Local Preview
+## My Passions
 
-1. Clone this repository or download the files
-2. Open `index.html` in your web browser
-3. Edit content in `index.html` as needed
-4. Update colors in `styles.css` if desired
+🎮 **Game Development** - Creating immersive gaming experiences with engaging mechanics and compelling narratives
 
-### GitHub Pages Deployment
+📊 **Data Science & Analytics** - Leveraging data to uncover insights and drive intelligent decision-making
 
-Follow these steps to publish your portfolio on GitHub Pages:
+🔐 **Cybersecurity** - Building secure systems and understanding cryptographic principles
 
-#### Step 1: Create a GitHub Repository
-1. Go to [github.com/new](https://github.com/new)
-2. Name your repository: `yourusername.github.io` (replace `yourusername` with your GitHub username)
-   - This is important! GitHub Pages will automatically deploy from this repository
-3. Make sure "Public" is selected
-4. Click "Create repository"
+🔧 **Backend Development** - Designing robust server architectures and scalable solutions
 
-#### Step 2: Upload Your Portfolio Files
-You can upload files in two ways:
+## What I Bring to the Table
 
-**Option A: Using Git (Recommended)**
-```bash
-# Navigate to your portfolio folder
-cd path/to/Portfolio
+- **Analytical Thinking**: Strong problem-solving skills with a focus on elegant, efficient solutions
+- **Full-Stack Vision**: Experience across multiple technologies and domains
+- **Collaborative Spirit**: Proven ability to work effectively in team environments
+- **Continuous Learning**: Always exploring new technologies and methodologies
+- **Passion-Driven**: Genuine enthusiasm for technology and innovation
 
-# Initialize git
-git init
+## My Journey
 
-# Add your GitHub repository as remote
-git remote add origin https://github.com/yourusername/yourusername.github.io.git
+Currently, I'm pursuing my Bachelor of Science in Computer Science while working on diverse projects ranging from augmented reality applications to backend systems and machine learning implementations. My academic foundation at Colegio de Jesus and prior education at De La Salle University-Dasmariñas (with honors) has shaped my analytical approach to technology.
 
-# Add all files
-git add .
+## Projects & Experience
 
-# Commit changes
-git commit -m "Initial portfolio commit"
+This portfolio showcases a mix of personal projects and collaborative work:
+- **AR/Immersive Tech**: AR Heritage, Endangered Species projects
+- **Backend Systems**: SCMS, CypherTalks infrastructure
+- **Machine Learning**: Sinsilyo project implementations
+- **Game Development**: Personal gaming experiments
 
-# Push to GitHub
-git branch -M main
-git push -u origin main
-```
+Explore the portfolio to see detailed breakdowns of each project, the technologies used, and my contributions.
 
-**Option B: Using GitHub Web Interface**
-1. Go to your repository
-2. Click "Add file" → "Upload files"
-3. Drag and drop your portfolio files or select them
-4. Commit the changes
+## Let's Connect
 
-#### Step 3: Verify Deployment
-1. Wait 1-2 minutes for GitHub to process
-2. Visit: `https://yourusername.github.io` in your browser
-3. Your portfolio is now live!
+I'm always open to interesting conversations about technology, game development, data science, or potential opportunities. Feel free to reach out through any of the contact methods in my portfolio.
 
-## File Structure
+---
 
-```
-Portfolio/
-├── index.html       # Main HTML file with all content
-├── styles.css       # Styling and responsive design
-├── script.js        # JavaScript for interactions
-└── README.md        # This file
-```
-
-## Customization Guide
-
-### Update Personal Information
-
-Edit `index.html` and update:
-- **Name and Title**: Search for `Mer Andreas S. Jorgio`
-- **Contact Info**: Update phone number and email
-- **GitHub Link**: Update GitHub URL in multiple places
-- **Social Links**: Add more contact methods in the Contact section
-
-### Change Color Theme
-
-Edit `styles.css` - look for the `:root` section at the top:
-
-```css
-:root {
-    --primary: #FF8C42;           /* Main orange color */
-    --primary-dark: #E67E3A;      /* Darker orange */
-    --primary-light: #FFB166;     /* Lighter orange */
-    /* ... other colors */
-}
-```
-
-Change the hex colors to your preferred palette. For example:
-- Use `#0066CC` for blue theme
-- Use `#00AA66` for green theme
-- Use `#FF6B35` for red-orange theme
-
-### Add New Sections
-
-To add a new section (e.g., Projects or Experience):
-
-1. Add the section in `index.html`:
-```html
-<section id="projects" class="section">
-    <div class="container">
-        <h2 class="section-title">Projects</h2>
-        <!-- Your content here -->
-    </div>
-</section>
-```
-
-2. Add navigation link in the navbar:
-```html
-<li><a href="#projects">Projects</a></li>
-```
-
-### Update Education & Experience
-
-Simply edit the content within the respective sections. The structure is self-explanatory:
-- Education items
-- Training entries
-- Reference cards
-
-## Tips for Maintenance
-
-1. **Version Control**: Use Git to track changes over time
-2. **Regular Updates**: Add new projects, skills, and experiences as you grow
-3. **Backup**: Keep a local copy of all files
-4. **Test Before Pushing**: Preview changes locally before uploading
-5. **SEO**: Consider adding meta tags for better search visibility
-
-## Browser Support
-
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
-- Mobile browsers
+**Location**: Philippines  
+**Current Status**: BSCS Student at CJC (2022-Present)  
+**Interests**: Game Dev, Data Science, Cybersecurity, Backend Architecture
 
 ## Performance
 
