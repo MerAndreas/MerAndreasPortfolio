@@ -10,26 +10,37 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Matrix Background Canvas -->
+    <canvas id="matrixCanvas"></canvas>
+
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
-            <div class="nav-brand">MJ</div>
+            <div class="nav-brand">
+                <svg class="nav-logo" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="6" r="5"/>
+                    <path d="M 4 20 Q 4 14 12 14 Q 20 14 20 20" fill="currentColor"/>
+                </svg>
+                MJ
+            </div>
             <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#training">Training</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#" class="tab-link" data-tab="home">Home</a></li>
+                <li><a href="#" class="tab-link" data-tab="about">About</a></li>
+                <li><a href="#" class="tab-link" data-tab="projects">Projects</a></li>
+                <li><a href="#" class="tab-link" data-tab="education">Education</a></li>
+                <li><a href="#" class="tab-link" data-tab="skills">Skills</a></li>
+                <li><a href="#" class="tab-link" data-tab="training">Training</a></li>
+                <li><a href="#" class="tab-link" data-tab="contact">Contact</a></li>
             </ul>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <header class="hero">
+    <header class="hero" style="display: none;">
         <div class="container">
             <div class="hero-content">
                 <h1 class="hero-title">Mer Andreas S. Jorgio</h1>
-                <p class="hero-subtitle">Computer Science Student | Full-Stack Developer</p>
+                <p class="hero-subtitle">Computer Science Student | Back-end Developer</p>
                 <p class="hero-description">Building impactful and scalable software solutions</p>
                 <div class="hero-buttons">
                     <a href="#contact" class="btn btn-primary">Get In Touch</a>
@@ -39,8 +50,47 @@
         </div>
     </header>
 
+    <!-- Home Section -->
+    <section id="home" class="tab-content" data-tab="home">
+        <div class="container">
+            <div class="home-greeting">
+                <h1 class="greeting-title">Hello, I'm Mer Andreas</h1>
+                <p class="greeting-subtitle">Computer Science Student | Back-end Developer</p>
+                <div class="greeting-message">
+                    <p>I'm a deeply analytical and logical thinker with a passion for solving complex problems. As an avid gamer and tech enthusiast, I channel my problem-solving mindset into creating meaningful software solutions. I'm driven by two core ambitions:</p>
+                    <div class="ambition-list">
+                        <div class="ambition-item">
+                            <svg class="ambition-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="2" y="2" width="20" height="20" rx="2" stroke="currentColor" stroke-width="2"/>
+                                <path d="M4 18L8 12L12 15L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="8" cy="9" r="1" fill="currentColor"/>
+                            </svg>
+                            <p><strong>Data Science & Databases</strong> — Transforming raw data into actionable insights through intelligent analysis and robust database architecture.</p>
+                        </div>
+                        <div class="ambition-item">
+                            <svg class="ambition-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2 12C2 6.48 6.48 2 12 2C17.52 2 22 6.48 22 12C22 17.52 17.52 22 12 22C6.48 22 2 17.52 2 12Z" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="9" cy="9" r="1.5" fill="currentColor"/>
+                                <circle cx="15" cy="9" r="1.5" fill="currentColor"/>
+                                <path d="M9 15C10 16 11 16.5 12 16.5C13 16.5 14 16 15 15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                <line x1="5" y1="11" x2="7" y2="11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                                <line x1="17" y1="11" x2="19" y2="11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>
+                            <p><strong>Game Development</strong> — Creating immersive interactive experiences that captivate and engage players through innovative game design.</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="greeting-closing">With a foundation in full-stack development and machine learning, I'm ready to make an impact in these domains.</p>
+                <div class="greeting-buttons">
+                    <a href="#" class="btn btn-primary tab-link" data-tab="about">Learn About Me</a>
+                    <a href="#" class="btn btn-secondary tab-link" data-tab="projects">View My Work</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- About Section -->
-    <section id="about" class="section">
+    <section id="about" class="tab-content" data-tab="about" style="display: none;">
         <div class="container">
             <h2 class="section-title">About</h2>
             <div class="about-content">
@@ -53,7 +103,7 @@
                         </div>
                         <div class="info-item">
                             <span class="info-label">Phone:</span>
-                            <span class="info-value">+63 (9) 9311 7620 1</span>
+                            <span class="info-value">+63 993 117 6201</span>
                         </div>
                         <div class="info-item">
                             <span class="info-label">Email:</span>
@@ -69,8 +119,112 @@
         </div>
     </section>
 
+    <!-- Projects Section -->
+    <section id="projects" class="tab-content" data-tab="projects" style="display: none;">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>AR Location-Based Virtual Cultural Heritage Site Preservation</h3>
+                        <span class="project-status status-in-progress">In Progress</span>
+                    </div>
+                    <p class="project-description"><strong>Personal Thesis Project</strong> — Leveraging AR technology to preserve and showcase cultural heritage sites through interactive location-based experiences, combining augmented reality with geolocation data for immersive cultural exploration.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Augmented Reality</span>
+                        <span class="project-tag">Location-Based</span>
+                        <span class="project-tag">Cultural Heritage</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Endangered Species Guidebook</h3>
+                        <span class="project-status status-in-progress">In Progress</span>
+                    </div>
+                    <p class="project-description"><strong>Personal Project</strong> — An augmented reality application designed to educate and raise awareness about endangered species. Users can view detailed information and 3D AR models of threatened animals, contributing to conservation efforts through interactive learning.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Augmented Reality</span>
+                        <span class="project-tag">Conservation</span>
+                        <span class="project-tag">Education</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Student Conduct Management System</h3>
+                        <span class="project-status status-completed">Completed</span>
+                    </div>
+                    <p class="project-description"><strong>Backend Development (Team Project)</strong> — A comprehensive logbook management system that streamlines student conduct records. Responsibilities included designing the database architecture, implementing filing systems for conduct slips, managing record storage, and generating automated monthly reports for administrative review.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Backend Development</span>
+                        <span class="project-tag">Database Design</span>
+                        <span class="project-tag">Record Management</span>
+                    </div>
+                    <a href="https://github.com/JorgioMer/Student-Conduct-Management-System-SCMS-" class="project-link" target="_blank">View on GitHub →</a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>CypherTalks</h3>
+                        <span class="project-status status-completed">Completed</span>
+                    </div>
+                    <p class="project-description"><strong>Backend Development (Team Project)</strong> — A messenger-style encrypted chat interface that demonstrates real-time communication between "Alice" and "Bob" using various classical and modern encryption methods. Users select encryption algorithms, exchange messages securely, and view encrypted communications with support for multi-perspective views.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Cryptography</span>
+                        <span class="project-tag">Chat Interface</span>
+                        <span class="project-tag">Encryption Methods</span>
+                    </div>
+                    <a href="#" class="project-link" target="_blank">View on GitHub →</a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Sinsilyo: Coin Identifier</h3>
+                        <span class="project-status status-completed">Completed</span>
+                    </div>
+                    <p class="project-description"><strong>Backend & ML Development (Team Project)</strong> — A machine learning application specialized in identifying identical Philippine coins. Responsibilities included training the ML model, optimizing recognition accuracy, developing the backend infrastructure, and integrating the model into a user-friendly identification system.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Machine Learning</span>
+                        <span class="project-tag">Model Training</span>
+                        <span class="project-tag">Backend Development</span>
+                    </div>
+                    <a href="https://github.com/josh-amir/Coin-Identifier-Application" class="project-link" target="_blank">View on GitHub →</a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Takyan Juggle</h3>
+                        <span class="project-status status-completed">Completed</span>
+                    </div>
+                    <p class="project-description"><strong>Personal Project</strong> — An engaging game experience centered around the character Takyan, developed in the Godot engine. Features dynamic gameplay mechanics, creative challenges, and intuitive controls designed for player engagement and entertainment.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Game Development</span>
+                        <span class="project-tag">Godot</span>
+                        <span class="project-tag">Gameplay Design</span>
+                    </div>
+                    <a href="https://github.com/MerAndreas/Takyan-Juggle" class="project-link" target="_blank">View on GitHub →</a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>La Calculette</h3>
+                        <span class="project-status status-completed">Completed</span>
+                    </div>
+                    <p class="project-description"><strong>Personal Project</strong> — A puzzle-based calculator game developed in Java NetBeans, combining mathematical challenges with intuitive gameplay. Players solve calculation puzzles with creative twists and progressive difficulty levels.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Game Development</span>
+                        <span class="project-tag">Java</span>
+                        <span class="project-tag">Puzzle Mechanics</span>
+                    </div>
+                    <a href="https://github.com/MerAndreas/LaCalcullette" class="project-link" target="_blank">View on GitHub →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Education Section -->
-    <section id="education" class="section section-alt">
+    <section id="education" class="tab-content" data-tab="education" style="display: none;">
         <div class="container">
             <h2 class="section-title">Education</h2>
             <div class="education-list">
@@ -98,7 +252,7 @@
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="section">
+    <section id="skills" class="tab-content" data-tab="skills" style="display: none;">
         <div class="container">
             <h2 class="section-title">Technology Skills</h2>
             <div class="skills-grid">
@@ -109,6 +263,7 @@
                         <span class="skill-tag">Java</span>
                         <span class="skill-tag">JavaScript</span>
                         <span class="skill-tag">HTML/CSS</span>
+                        <span class="skill-tag">GDScript</span>
                     </div>
                 </div>
 
@@ -118,6 +273,9 @@
                         <span class="skill-tag">MySQL</span>
                         <span class="skill-tag">MS Access</span>
                         <span class="skill-tag">Supabase</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">REST APIs</span>
+                        <span class="skill-tag">Backend Development</span>
                     </div>
                 </div>
 
@@ -126,8 +284,40 @@
                     <div class="skill-tags">
                         <span class="skill-tag">Unity</span>
                         <span class="skill-tag">Godot</span>
-                        <span class="skill-tag">GDScript</span>
                         <span class="skill-tag">Java Swing</span>
+                        <span class="skill-tag">GUI Development</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Augmented Reality & 3D</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Vuforia</span>
+                        <span class="skill-tag">AR Development</span>
+                        <span class="skill-tag">Location-Based Services</span>
+                        <span class="skill-tag">Geolocation APIs</span>
+                        <span class="skill-tag">3D Modeling</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Machine Learning & AI</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Machine Learning</span>
+                        <span class="skill-tag">Model Training</span>
+                        <span class="skill-tag">Image Recognition</span>
+                        <span class="skill-tag">TensorFlow</span>
+                        <span class="skill-tag">scikit-learn</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Cryptography & Security</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Encryption Methods</span>
+                        <span class="skill-tag">Cryptographic Ciphers</span>
+                        <span class="skill-tag">Data Security</span>
+                        <span class="skill-tag">Secure Communication</span>
                     </div>
                 </div>
 
@@ -136,8 +326,8 @@
                     <div class="skill-tags">
                         <span class="skill-tag">Git</span>
                         <span class="skill-tag">GitHub</span>
-                        <span class="skill-tag">Machine Learning</span>
-                        <span class="skill-tag">Vuforia</span>
+                        <span class="skill-tag">NetBeans</span>
+                        <span class="skill-tag">VS Code</span>
                     </div>
                 </div>
             </div>
@@ -145,7 +335,7 @@
     </section>
 
     <!-- Training Section -->
-    <section id="training" class="section section-alt">
+    <section id="training" class="tab-content" data-tab="training" style="display: none;">
         <div class="container">
             <h2 class="section-title">Training & Seminars</h2>
             <div class="training-list">
@@ -177,7 +367,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="section">
+    <section id="contact" class="tab-content" data-tab="contact" style="display: none;">
         <div class="container">
             <h2 class="section-title">Get In Touch</h2>
             <div class="contact-content">
@@ -189,11 +379,15 @@
                     </a>
                     <a href="tel:+639931176201" class="contact-link">
                         <span class="link-icon">☎</span>
-                        <span>+63 (9) 9311 7620 1</span>
+                        <span>+63 993 117 6201</span>
                     </a>
-                    <a href="https://github.com/meranareas" class="contact-link" target="_blank">
+                    <a href="https://github.com/JorgioMer" class="contact-link contact-link-featured" target="_blank">
                         <span class="link-icon">⚙</span>
-                        <span>GitHub</span>
+                        <span>GitHub (School Account) <span class="featured-badge">Primary</span></span>
+                    </a>
+                    <a href="https://github.com/MerAndreas" class="contact-link" target="_blank">
+                        <span class="link-icon">⚙</span>
+                        <span>GitHub (Personal)</span>
                     </a>
                 </div>
             </div>
@@ -201,7 +395,7 @@
     </section>
 
     <!-- References Section -->
-    <section class="section section-alt">
+    <section class="tab-content" data-tab="references" style="display: none;">
         <div class="container">
             <h2 class="section-title">References</h2>
             <div class="references-grid">
@@ -232,7 +426,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 Mer Andreas S. Jorgio. Designed with care.</p>
+            <p>&copy; 2026 Mer Andreas S. Jorgio.</p>
         </div>
     </footer>
 
