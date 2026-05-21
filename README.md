@@ -2,7 +2,7 @@
 
 Welcome to my portfolio! I'm a Computer Science student at Colegio de Jesus (CJC) with a passion for analytical problem-solving and creative game development.
 
-🔗 **[Explore my full portfolio](https://merandreas.github.io/MyPortfolio/)**
+🔗 **[Explore my full portfolio](https://merandreas.github.io/MerAndreasPortfolio/)**
 
 ## Who I Am
 
